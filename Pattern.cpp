@@ -18,8 +18,8 @@ void print2(int n){
 }
 void print3(int n){
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            cout<<j<<" ";
+        for(char ch='A';ch<='A'+i;ch++){
+            cout<<ch<<" ";
         }
         cout<<endl;
     }
@@ -90,6 +90,6 @@ int main(){
     for(int i=0;i<t;i++){
     int n;
     cin>>n;
-    print8(n);
+    print3(n);
     }
 }
