@@ -3,17 +3,17 @@ using namespace std;
 
 
 //REVERSE A NUMBER  
-int main(){
-    int n;
-    cin>>n;
-    int revN=0;
-    while(n>0){
-        int ld=n%10;
-        revN=(revN*10)+ld;
-        n=n/10;
-    }
-    cout<<revN;
-}
+// int main(){
+//     int n;
+//     cin>>n;
+//     int revN=0;
+//     while(n>0){
+//         int ld=n%10;
+//         revN=(revN*10)+ld;
+//         n=n/10;
+//     }
+//     cout<<revN;
+//}
 
 
 //CHECK PALINDROME
@@ -108,7 +108,7 @@ int main(){
 //     cin>>a;
 //     cout<<"Second Number"<<endl;
 //     cin>>b;
-//     // int result=gcd(a,b);
+//     int result=gcd(a,b);
 //     cout<<"GCD is: "<<gcd(a,b);
 //     return 0;
 // }
@@ -138,13 +138,13 @@ int main(){
 //     cout<<"Enter a number :";
 //     cin>>n;
 //     int fact=1;
-//     // while(n>=1){
-//     //     fact=fact*n;
-//     //     n--; //n=n-1;
-//     // }
-//     for(n;n>=1;n--){
-//         fact =fact*n;
+//     while(n>=1){
+//         fact=fact*n;
+//         n--; //n=n-1;
 //     }
+//     // for(n;n>=1;n--){
+//     //     fact =fact*n;
+//     // }
 //     cout<<"Factorial :"<<fact;
 //     return 0;
 // }
