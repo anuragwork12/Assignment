@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 //REVERSE A NUMBER  
 // int main(){
 //     int n;
