@@ -9,19 +9,48 @@
 // f(6)=3+5=8
 // So Fibonacci series of 10 is:-0,1,1,2,3,5,8
 
+// function fibonacciSeries(n){
+//     let x,y,z;
+//     x=0;
+//     y=1;
+//     z=0;
+//     while(z<=n){
+//         console.log(z);
+//         x=y;
+//         y=z;
+//         z=x+y;
+//     }
+// }
+
+// let num =10;
+// fibonacciSeries(num);
+
+
+// Example usage with error handling
+
 function fibonacciSeries(n){
-    let x,y,z;
-    x=0;
-    y=1;
-    z=0;
-    while(z<=n){
-        console.log(z);
-        x=y;
-        y=z;
-        z=x+y;
+    if (typeof n!=='number'){
+        throw new Error("Invalid input: Input must be number.");
     }
+    if (!Number.isInteger(n) || n<0){
+        throw new Error("Invalid input: Please enter an integer greater than 0.");
+    }
+    let x,y,z;
+        x=0;
+        y=1;
+        z=0;
+        while(z<=n){
+            console.log(z);
+            x=y;
+            y=z;
+            z=x+y;
+        }
 }
 
-let num =10;
-fibonacciSeries(num);
-
+try {
+    let num =10;
+    console.log(`The fibonacci series of ${num}  is:`)
+    fibonacciSeries(num);
+} catch (error) {
+    console.log(error.message)
+}
