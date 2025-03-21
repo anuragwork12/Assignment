@@ -56,3 +56,4 @@ if (isArmstrong(num)) {
 } catch (error) {
     console.error(error.message);
 }
+
